@@ -10,7 +10,7 @@ apt-get install -y --no-install-recommends \
   unzip
 
 # Intentionally NOT installing openssh-server.
-apt-get purge -y openssh-server || true
+# keep openssh-server during build (packer provisioning); remove in hardening.sh
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*

@@ -1,0 +1,25 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: nighthax-vm
+    username: nico
+    # password: Nighthax
+    password: "$6$UOI1HxHuhmVvt0.R$BE1.MBBgx7Z7DTIqQ8l//MFbRTbSCZL7h98l2F8eC7rMUv9INo0F7KemOBzKHDe0f9upIlS0uqJq05/p69Jsv."
+  locale: en_US
+  keyboard:
+    layout: us
+  ssh:
+    install-server: true
+    allow-pw: true
+  packages:
+    - sudo
+    - curl
+    - ca-certificates
+  storage:
+    layout:
+      name: direct
+  late-commands:
+    # allow passwordless sudo temporarily for provisioning steps
+    - curtin in-target --target=/target -- bash -lc "echo 'nico ALL=(ALL) NOPASSWD:ALL' >/etc/sudoers.d/99-nico"
+    - curtin in-target --target=/target -- chmod 440 /etc/sudoers.d/99-nico
