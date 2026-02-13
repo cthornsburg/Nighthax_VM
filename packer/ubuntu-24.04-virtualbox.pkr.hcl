@@ -28,6 +28,15 @@ variable "iso_checksum" {
 }
 
 source "virtualbox-iso" "ubuntu" {
+  vboxmanage = [
+    ["modifyvm", "{{.Name}}", "--vram", "64"],
+    ["modifyvm", "{{.Name}}", "--graphicscontroller", "vmsvga"],
+    ["modifyvm", "{{.Name}}", "--accelerate3d", "off"],
+    ["modifyvm", "{{.Name}}", "--nictype1", "82540EM"],
+    ["modifyvm", "{{.Name}}", "--uartmode1", "disconnected"],
+    ["modifyvm", "{{.Name}}", "--audio", "none"]
+  ]
+
   vm_name              = var.vm_name
   guest_os_type        = "Ubuntu_64"
 
