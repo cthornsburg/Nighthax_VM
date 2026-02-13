@@ -69,6 +69,7 @@ build {
   sources = ["source.virtualbox-iso.ubuntu"]
 
   provisioner "shell" {
+    execute_command = "echo 'packer' | sudo -S -E bash '{{ .Path }}'"
     scripts = [
       "scripts/provision/base-packages.sh",
       "scripts/provision/install-tools.sh",
