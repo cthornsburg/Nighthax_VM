@@ -29,8 +29,8 @@ variable "iso_checksum" {
 
 source "virtualbox-iso" "ubuntu" {
   vboxmanage = [
-    ["modifyvm", "{{.Name}}", "--vram", "64"],
-    ["modifyvm", "{{.Name}}", "--graphicscontroller", "vmsvga"],
+    ["modifyvm", "{{.Name}}", "--vram", "128"],
+    ["modifyvm", "{{.Name}}", "--graphicscontroller", "vboxsvga"],
     ["modifyvm", "{{.Name}}", "--accelerate3d", "off"],
     ["modifyvm", "{{.Name}}", "--nictype1", "82540EM"],
     ["modifyvm", "{{.Name}}", "--uartmode1", "disconnected"],
