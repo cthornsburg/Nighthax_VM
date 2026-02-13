@@ -1,4 +1,4 @@
-# NighHax VM (Kali‑Lite on Ubuntu)
+# NighHax VM (Ubuntu)
 
 Beginner-friendly Linux VM for CTF competitions and network-traffic analysis.
 
