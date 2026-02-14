@@ -26,10 +26,16 @@ apt-get install -y --no-install-recommends \
 # bulk_extractor binary comes from bulk-extractor package (universe)
 apt-get install -y --no-install-recommends bulk-extractor || echo "[nighthax] note: bulk-extractor not available in this repo set"
 
-# volatility3 package name varies; prefer apt, fall back to pipx if needed
+# volatility3 package name varies; prefer apt, fall back to pipx if needed.
+# IMPORTANT: The setup script runs as root, but we want pipx-installed CLIs to land
+# in the *student* user's home so they are on that user's PATH.
 apt-get install -y --no-install-recommends volatility3 || \
   apt-get install -y --no-install-recommends python3-volatility3 || \
-  (echo "[nighthax] note: volatility3 apt package not available; installing via pipx" && pipx install volatility3)
+  (
+    echo "[nighthax] note: volatility3 apt package not available; installing via pipx (user scope)";
+    TARGET_USER="${NIGHHAX_TARGET_USER:-${SUDO_USER:-nico}}";
+    sudo -u "$TARGET_USER" -H bash -lc 'pipx install -f volatility3 && pipx ensurepath'
+  )
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*
