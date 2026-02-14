@@ -19,6 +19,7 @@ apt-get install -y --no-install-recommends \
   ssdeep \
   exiftool binwalk foremost whois dnsutils \
   sqlitebrowser \
+  libreoffice \
   gdb \
   ca-certificates
 
