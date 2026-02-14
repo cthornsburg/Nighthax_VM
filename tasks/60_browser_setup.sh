@@ -28,6 +28,7 @@ POLICY_JSON=$(cat <<JSON
     },
     "OverrideFirstRunPage": "${START_URL}",
     "DisableTelemetry": true,
+    "DisplayBookmarksToolbar": true,
     "Bookmarks": [
       {
         "Title": "NighHax",
