@@ -33,6 +33,7 @@ POLICY_JSON=$(cat <<JSON
       {
         "Title": "NighHax",
         "URL": "https://nighthax.com/",
+        "Folder": "Start Here",
         "Placement": "toolbar"
       },
       {
@@ -52,25 +53,26 @@ POLICY_JSON=$(cat <<JSON
       {"Title":"crt.sh (Certificate Transparency)","URL":"https://crt.sh/","Folder":"NCL · OSINT","Placement":"toolbar"},
       {"Title":"ICANN WHOIS","URL":"https://lookup.icann.org/","Folder":"NCL · OSINT","Placement":"toolbar"},
 
-      {"Title":"Nmap Reference Guide","URL":"https://nmap.org/book/man.html","Folder":"NCL · Scanning","Placement":"toolbar"},
-      {"Title":"Shodan","URL":"https://www.shodan.io/","Folder":"NCL · Scanning","Placement":"toolbar"},
-
-      {"Title":"GTFOBins","URL":"https://gtfobins.github.io/","Folder":"NCL · Enumeration & Exploitation","Placement":"toolbar"},
-      {"Title":"LOLBAS","URL":"https://lolbas-project.github.io/","Folder":"NCL · Enumeration & Exploitation","Placement":"toolbar"},
-      {"Title":"Exploit-DB","URL":"https://www.exploit-db.com/","Folder":"NCL · Enumeration & Exploitation","Placement":"toolbar"},
-      {"Title":"PayloadsAllTheThings","URL":"https://github.com/swisskyrepo/PayloadsAllTheThings","Folder":"NCL · Enumeration & Exploitation","Placement":"toolbar"},
+      {"Title":"Nmap Reference Guide","URL":"https://nmap.org/book/man.html","Folder":"NCL · Scanning + Enumeration","Placement":"toolbar"},
+      {"Title":"Shodan","URL":"https://www.shodan.io/","Folder":"NCL · Scanning + Enumeration","Placement":"toolbar"},
+      {"Title":"GTFOBins","URL":"https://gtfobins.github.io/","Folder":"NCL · Scanning + Enumeration","Placement":"toolbar"},
+      {"Title":"LOLBAS","URL":"https://lolbas-project.github.io/","Folder":"NCL · Scanning + Enumeration","Placement":"toolbar"},
+      {"Title":"Exploit-DB","URL":"https://www.exploit-db.com/","Folder":"NCL · Scanning + Enumeration","Placement":"toolbar"},
+      {"Title":"PayloadsAllTheThings","URL":"https://github.com/swisskyrepo/PayloadsAllTheThings","Folder":"NCL · Scanning + Enumeration","Placement":"toolbar"},
 
       {"Title":"CyberChef","URL":"https://gchq.github.io/CyberChef/","Folder":"NCL · Cryptography","Placement":"toolbar"},
       {"Title":"dCode","URL":"https://www.dcode.fr/","Folder":"NCL · Cryptography","Placement":"toolbar"},
       {"Title":"Cryptii","URL":"https://cryptii.com/","Folder":"NCL · Cryptography","Placement":"toolbar"},
 
       {"Title":"CrackStation (hash lookup)","URL":"https://crackstation.net/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
-      {"Title":"Hashcat Wiki","URL":"https://hashcat.net/wiki/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
-      {"Title":"John the Ripper","URL":"https://www.openwall.com/john/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"Hashes.com (hash database)","URL":"https://hashes.com/en/decrypt/hash","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"CyberChef","URL":"https://gchq.github.io/CyberChef/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"Hashcat Wiki (reference)","URL":"https://hashcat.net/wiki/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"John the Ripper (reference)","URL":"https://www.openwall.com/john/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
 
-      {"Title":"Wireshark Display Filters","URL":"https://www.wireshark.org/docs/dfref/","Folder":"NCL · Network Traffic Analysis","Placement":"toolbar"},
-      {"Title":"Malware Traffic Analysis (PCAPs)","URL":"https://www.malware-traffic-analysis.net/","Folder":"NCL · Network Traffic Analysis","Placement":"toolbar"},
-      {"Title":"Zeek Docs","URL":"https://docs.zeek.org/en/current/","Folder":"NCL · Network Traffic Analysis","Placement":"toolbar"},
+      {"Title":"Wireshark Display Filters","URL":"https://www.wireshark.org/docs/dfref/","Folder":"NCL · Traffic + Wireless","Placement":"toolbar"},
+      {"Title":"Malware Traffic Analysis (PCAPs)","URL":"https://www.malware-traffic-analysis.net/","Folder":"NCL · Traffic + Wireless","Placement":"toolbar"},
+      {"Title":"Zeek Docs","URL":"https://docs.zeek.org/en/current/","Folder":"NCL · Traffic + Wireless","Placement":"toolbar"},
 
       {"Title":"Splunk SPL Search Reference","URL":"https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Search","Folder":"NCL · Log Analysis","Placement":"toolbar"},
       {"Title":"Elastic Security Labs","URL":"https://www.elastic.co/security-labs","Folder":"NCL · Log Analysis","Placement":"toolbar"},
@@ -83,8 +85,8 @@ POLICY_JSON=$(cat <<JSON
       {"Title":"OWASP Cheat Sheet Series","URL":"https://cheatsheetseries.owasp.org/","Folder":"NCL · Web Application Security","Placement":"toolbar"},
       {"Title":"Regex101","URL":"https://regex101.com/","Folder":"NCL · Web Application Security","Placement":"toolbar"},
 
-      {"Title":"Aircrack-ng","URL":"https://www.aircrack-ng.org/","Folder":"NCL · Wireless Security","Placement":"toolbar"},
-      {"Title":"WiGLE","URL":"https://wigle.net/","Folder":"NCL · Wireless Security","Placement":"toolbar"}
+      {"Title":"Aircrack-ng","URL":"https://www.aircrack-ng.org/","Folder":"NCL · Traffic + Wireless","Placement":"toolbar"},
+      {"Title":"WiGLE","URL":"https://wigle.net/","Folder":"NCL · Traffic + Wireless","Placement":"toolbar"}
     ]
   }
 }
