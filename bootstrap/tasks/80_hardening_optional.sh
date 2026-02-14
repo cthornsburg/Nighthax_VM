@@ -2,15 +2,16 @@
 set -euo pipefail
 
 # Hardening/safety defaults for classroom VM.
+#
+# IMPORTANT: We no longer purge SSH by default. Many students won't need it,
+# but maintainers/instructors may enable it for troubleshooting.
 
-# Remove SSH server (was enabled for Packer provisioning)
-if dpkg -s openssh-server >/dev/null 2>&1; then
+# Disable SSH server (keep package installed)
+if systemctl list-unit-files | grep -q '^ssh\.service'; then
   systemctl disable --now ssh || true
-  apt-get purge -y openssh-server || true
-  apt-get autoremove -y || true
 fi
 
-# Remove temporary passwordless sudo
+# Remove temporary passwordless sudo (legacy)
 rm -f /etc/sudoers.d/99-nico || true
 
 # Visible classroom warning
@@ -20,7 +21,7 @@ NighHax VM (classroom build)
 
 - Default credentials are for classroom convenience.
   Username: nico
-  Password: Nighthax
+  Password: (set during install)
 
 - Do NOT use this VM outside of class unless you change the password.
 
