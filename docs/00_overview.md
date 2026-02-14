@@ -16,7 +16,8 @@ This repo provides a **CTF VM setup kit** for NLC NighHax / cyber defense studen
 - Not a replacement for CTF writeups (those live in the `nlc_cyber` repo)
 
 ## Supported baseline
-- Guest OS: Ubuntu 24.04 LTS family (recommended: **Xubuntu 24.04 LTS**)
+- Guest OS: **Xubuntu 24.04 LTS** (recommended)
+  - Other Ubuntu 24.04 LTS flavors may work, but Xubuntu is the documented baseline.
 - Hypervisor (standard): **VirtualBox**
 - VMware Workstation: supported only as an *already-installed* alternative (see `docs/90_vmware_optional.md`)
 
