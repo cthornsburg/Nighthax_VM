@@ -47,15 +47,16 @@ apt-get install -y --no-install-recommends volatility3 || \
 
 # Optional: Didier Stevens pdf-parser.py (best-effort)
 # Many CTF writeups reference this script for PDF triage.
-# Source (author site): https://didierstevens.com/files/software/pdf-parser.py
+# Prefer the official GitHub raw file (DidierStevensSuite).
 if command -v curl >/dev/null 2>&1; then
   install -d /opt/nighthax/bin
-  curl -fsSL -o /opt/nighthax/bin/pdf-parser.py https://didierstevens.com/files/software/pdf-parser.py || true
+  PDFP_URL="https://raw.githubusercontent.com/DidierStevens/DidierStevensSuite/master/pdf-parser.py"
+  curl -fsSL -o /opt/nighthax/bin/pdf-parser.py "$PDFP_URL" || true
   if [[ -s /opt/nighthax/bin/pdf-parser.py ]]; then
     chmod 0755 /opt/nighthax/bin/pdf-parser.py
     ln -sf /opt/nighthax/bin/pdf-parser.py /usr/local/bin/pdf-parser.py
   else
-    echo "[nighthax] note: pdf-parser.py download failed"
+    echo "[nighthax] note: pdf-parser.py download failed ($PDFP_URL)"
   fi
 fi
 
