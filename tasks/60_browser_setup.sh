@@ -50,6 +50,9 @@ POLICY_JSON=$(cat <<JSON
       },
 
       {"Title":"OSINT Framework","URL":"https://osintframework.com/","Folder":"NCL · OSINT","Placement":"toolbar"},
+      {"Title":"Awesome OSINT","URL":"https://github.com/jivoi/awesome-osint","Folder":"NCL · OSINT","Placement":"toolbar"},
+      {"Title":"TinEye","URL":"https://tineye.com/","Folder":"NCL · OSINT","Placement":"toolbar"},
+      {"Title":"Overpass Turbo","URL":"https://overpass-turbo.eu/","Folder":"NCL · OSINT","Placement":"toolbar"},
       {"Title":"crt.sh (Certificate Transparency)","URL":"https://crt.sh/","Folder":"NCL · OSINT","Placement":"toolbar"},
       {"Title":"ICANN WHOIS","URL":"https://lookup.icann.org/","Folder":"NCL · OSINT","Placement":"toolbar"},
 
@@ -61,14 +64,23 @@ POLICY_JSON=$(cat <<JSON
       {"Title":"PayloadsAllTheThings","URL":"https://github.com/swisskyrepo/PayloadsAllTheThings","Folder":"NCL · Scanning + Enumeration","Placement":"toolbar"},
 
       {"Title":"CyberChef","URL":"https://gchq.github.io/CyberChef/","Folder":"NCL · Cryptography","Placement":"toolbar"},
-      {"Title":"dCode","URL":"https://www.dcode.fr/","Folder":"NCL · Cryptography","Placement":"toolbar"},
+      {"Title":"dCode","URL":"https://www.dcode.fr/en","Folder":"NCL · Cryptography","Placement":"toolbar"},
+      {"Title":"Rumkin Cipher Tools","URL":"https://rumkin.com/tools/cipher/","Folder":"NCL · Cryptography","Placement":"toolbar"},
+      {"Title":"QuipQiup","URL":"https://quipqiup.com/","Folder":"NCL · Cryptography","Placement":"toolbar"},
       {"Title":"Cryptii","URL":"https://cryptii.com/","Folder":"NCL · Cryptography","Placement":"toolbar"},
+      {"Title":"Dogbolt (Decompiler Explorer)","URL":"https://dogbolt.org/","Folder":"NCL · Cryptography","Placement":"toolbar"},
 
+      {"Title":"Name-That-Hash","URL":"https://nth.skerritt.blog/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
       {"Title":"CrackStation (hash lookup)","URL":"https://crackstation.net/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
       {"Title":"Hashes.com (hash database)","URL":"https://hashes.com/en/decrypt/hash","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"md5decrypt.net","URL":"https://md5decrypt.net/en/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"pdf2john (online)","URL":"https://hashes.com/en/johntheripper/pdf2john","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"zip2john (online)","URL":"https://hashes.com/en/johntheripper/zip2john","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"7z2john (online)","URL":"https://hashes.com/en/johntheripper/7z2john","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"office2john (online)","URL":"https://hashes.com/en/johntheripper/office2john","Folder":"NCL · Password Cracking","Placement":"toolbar"},
       {"Title":"CyberChef","URL":"https://gchq.github.io/CyberChef/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
       {"Title":"Hashcat Wiki (reference)","URL":"https://hashcat.net/wiki/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
-      {"Title":"John the Ripper (reference)","URL":"https://www.openwall.com/john/","Folder":"NCL · Password Cracking","Placement":"toolbar"},
+      {"Title":"John the Ripper (reference)","URL":"https://github.com/openwall/john","Folder":"NCL · Password Cracking","Placement":"toolbar"},
 
       {"Title":"Wireshark Display Filters","URL":"https://www.wireshark.org/docs/dfref/","Folder":"NCL · Traffic + Wireless","Placement":"toolbar"},
       {"Title":"Malware Traffic Analysis (PCAPs)","URL":"https://www.malware-traffic-analysis.net/","Folder":"NCL · Traffic + Wireless","Placement":"toolbar"},
@@ -83,6 +95,7 @@ POLICY_JSON=$(cat <<JSON
 
       {"Title":"PortSwigger Web Security Academy","URL":"https://portswigger.net/web-security","Folder":"NCL · Web Application Security","Placement":"toolbar"},
       {"Title":"OWASP Cheat Sheet Series","URL":"https://cheatsheetseries.owasp.org/","Folder":"NCL · Web Application Security","Placement":"toolbar"},
+      {"Title":"Wappalyzer","URL":"https://www.wappalyzer.com/","Folder":"NCL · Web Application Security","Placement":"toolbar"},
       {"Title":"Regex101","URL":"https://regex101.com/","Folder":"NCL · Web Application Security","Placement":"toolbar"},
 
       {"Title":"Aircrack-ng","URL":"https://www.aircrack-ng.org/","Folder":"NCL · Traffic + Wireless","Placement":"toolbar"},
