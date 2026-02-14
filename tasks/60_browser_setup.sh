@@ -27,7 +27,68 @@ POLICY_JSON=$(cat <<JSON
       "URL": "${START_URL}"
     },
     "OverrideFirstRunPage": "${START_URL}",
-    "DisableTelemetry": true
+    "DisableTelemetry": true,
+    "Bookmarks": [
+      {
+        "Title": "NighHax",
+        "URL": "https://nighthax.com/",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "NLC Cyber Hub",
+        "URL": "https://cthornsburg.github.io/nlc_cyber/",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "CTFtime",
+        "URL": "https://ctftime.org/",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "CyberChef",
+        "URL": "https://gchq.github.io/CyberChef/",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "HackTricks",
+        "URL": "https://book.hacktricks.xyz/",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "GTFOBins",
+        "URL": "https://gtfobins.github.io/",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "PayloadsAllTheThings",
+        "URL": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "SecLists",
+        "URL": "https://github.com/danielmiessler/SecLists",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "Exploit-DB",
+        "URL": "https://www.exploit-db.com/",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      },
+      {
+        "Title": "Regex101",
+        "URL": "https://regex101.com/",
+        "Folder": "CTF Resources",
+        "Placement": "toolbar"
+      }
+    ]
   }
 }
 JSON

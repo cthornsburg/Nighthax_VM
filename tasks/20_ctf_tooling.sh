@@ -12,7 +12,7 @@ apt-get install -y --no-install-recommends \
   jq ripgrep tmux p7zip-full \
   python3 python3-venv pipx \
   build-essential \
-  tcpdump tshark wireshark \
+  tcpdump tshark wireshark nmap \
   john \
   ssdeep \
   exiftool binwalk foremost \
