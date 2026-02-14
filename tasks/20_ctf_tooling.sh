@@ -18,10 +18,17 @@ apt-get install -y --no-install-recommends \
   john \
   ssdeep \
   exiftool binwalk foremost whois dnsutils \
+  poppler-utils \
+  openssl \
   sqlitebrowser \
   libreoffice \
   gdb \
   ca-certificates
+
+# Common CTF add-ons (best-effort)
+for pkg in gobuster ffuf hashid fcrackzip steghide; do
+  apt-get install -y --no-install-recommends "$pkg" || echo "[nighthax] note: $pkg not available in this repo set"
+done
 
 # Optional packages (best-effort; skip if not present in repos)
 # bulk_extractor binary comes from bulk-extractor package (universe)
@@ -37,6 +44,20 @@ apt-get install -y --no-install-recommends volatility3 || \
     TARGET_USER="${NIGHHAX_TARGET_USER:-${SUDO_USER:-nico}}";
     sudo -u "$TARGET_USER" -H bash -lc 'pipx install -f volatility3 && pipx ensurepath'
   )
+
+# Optional: Didier Stevens pdf-parser.py (best-effort)
+# Many CTF writeups reference this script for PDF triage.
+# Source (author site): https://didierstevens.com/files/software/pdf-parser.py
+if command -v curl >/dev/null 2>&1; then
+  install -d /opt/nighthax/bin
+  curl -fsSL -o /opt/nighthax/bin/pdf-parser.py https://didierstevens.com/files/software/pdf-parser.py || true
+  if [[ -s /opt/nighthax/bin/pdf-parser.py ]]; then
+    chmod 0755 /opt/nighthax/bin/pdf-parser.py
+    ln -sf /opt/nighthax/bin/pdf-parser.py /usr/local/bin/pdf-parser.py
+  else
+    echo "[nighthax] note: pdf-parser.py download failed"
+  fi
+fi
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*
