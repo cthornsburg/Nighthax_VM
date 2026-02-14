@@ -15,7 +15,8 @@ apt-get install -y --no-install-recommends \
   tcpdump tshark wireshark nmap \
   john \
   ssdeep \
-  exiftool binwalk foremost \
+  exiftool binwalk foremost bulk-extractor whois dnsutils \
+  volatility3 \
   gdb \
   ca-certificates
 
