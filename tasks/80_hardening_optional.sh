@@ -4,7 +4,7 @@ set -euo pipefail
 # Hardening/safety defaults for classroom VM.
 #
 # IMPORTANT: We no longer purge SSH by default. Many students won't need it,
-# but maintainers/instructors may enable it for troubleshooting.
+# but instructors may enable it for troubleshooting.
 
 # Disable SSH server (keep package installed)
 if systemctl list-unit-files | grep -q '^ssh\.service'; then

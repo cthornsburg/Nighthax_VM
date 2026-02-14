@@ -15,7 +15,7 @@ add-apt-repository -y universe
 apt-get update
 
 # Intentionally NOT installing openssh-server.
-# keep openssh-server during build (packer provisioning); remove in hardening.sh
+# SSH can be installed later if needed; hardening step disables it by default.
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*

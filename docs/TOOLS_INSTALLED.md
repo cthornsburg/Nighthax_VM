@@ -41,11 +41,11 @@ Notes:
 - **exiftool** — metadata inspection.
 - **binwalk** — identify/extract embedded data in binaries/files.
 - **foremost** — file carving.
-- **bulk-extractor** — bulk extraction of artifacts (emails/URLs/CCNs) from disk images and files.
+- **bulk-extractor** — bulk extraction of artifacts (emails/URLs/CCNs) from disk images and files. (Best-effort install; may be unavailable on some repos.)
 - **ssdeep** — fuzzy hashing / similarity.
 
 ### Memory forensics
-- **volatility3** — memory analysis framework.
+- **volatility3** — memory analysis framework. (Installed via apt when available; otherwise via pipx.)
 
 ### Debugging / reversing basics
 - **gdb** — debugger.

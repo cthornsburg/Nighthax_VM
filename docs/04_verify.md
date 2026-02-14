@@ -9,7 +9,8 @@ Use this checklist after building the VM and before publishing an OVA link.
 
 ## 2) Security defaults
 - [ ] SSH server is not installed OR is disabled and not running
-  - Check: `systemctl status ssh` (should be inactive/not found)
+  - Check: `systemctl is-enabled ssh` (should be `disabled` if installed)
+  - Check: `systemctl is-active ssh` (should be `inactive`)
 - [ ] No hard-coded secrets besides the intentionally documented default password
 
 ## 3) Browser + bookmarks

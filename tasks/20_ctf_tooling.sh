@@ -2,7 +2,6 @@
 set -euo pipefail
 
 # Install core tools for the NighHax VM.
-# DRAFT: exact package list will be finalized during build validation.
 
 export DEBIAN_FRONTEND=noninteractive
 
