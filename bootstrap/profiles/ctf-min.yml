@@ -1,0 +1,7 @@
+# ctf-min: minimal baseline for low-spec machines
+packages:
+  - git
+  - curl
+  - wget
+  - unzip
+  - build-essential

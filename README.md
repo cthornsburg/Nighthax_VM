@@ -1,19 +1,22 @@
-# NighHax VM (Ubuntu)
+# NighHax VM Setup Kit
 
-Beginner-friendly Linux VM for CTF competitions and network-traffic analysis.
+A beginner-friendly, reproducible Linux VM setup for CTF competitions.
 
-Build system for a lightweight, beginner-friendly CTF VM appliance (VMware-first, VirtualBox-usable).
+This repo assumes **students create their own base VM** (Windows 11 host, VirtualBox or VMware), then pull customization via `git clone` inside the VM.
 
-Status: DRAFT
+## Start here
+1) Read: `docs/00_overview.md`
+2) Windows 11 prereqs: `docs/01_windows11_prereqs.md`
+3) Pick a hypervisor:
+   - VirtualBox: `docs/02_virtualbox_setup.md`
+   - VMware: `docs/03_vmware_setup.md`
+4) Run bootstrap: `docs/04_bootstrap_quickstart.md`
+5) USB + clipboard: `docs/05_usb_clipboard_sharedfolders.md`
+6) Troubleshooting: `docs/06_troubleshooting_faq.md`
 
-## Download (OVA)
-OVA download link: **(maintainer will add after first build)**
+## CTF writeups / broader student hub
+CTF writeups and broader program resources live in `nlc_cyber`:
+- https://cthornsburg.github.io/nlc_cyber/
 
-## Quickstart
-- Download/import OVA: `docs/QUICKSTART_OVA.md`
-- Build on Windows (VMware + Packer): `docs/STUDENT_BUILD_WINDOWS.md`
-- Verification checklist: `docs/VERIFY.md`
-
-Repo (student-facing references)
-- NLC Cyber hub: https://cthornsburg.github.io/nlc_cyber/
-- NighHax: https://nighthax.com
+## Status
+In active development. Contributions welcome (see `CONTRIBUTING.md`).

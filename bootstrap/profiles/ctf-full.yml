@@ -1,0 +1,15 @@
+# ctf-full: heavier tooling (optional)
+packages:
+  - git
+  - curl
+  - wget
+  - unzip
+  - build-essential
+  - python3
+  - python3-pip
+  - python3-venv
+  - nmap
+  - wireshark
+  - john
+  - hashcat
+  - gobuster

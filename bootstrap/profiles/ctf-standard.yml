@@ -1,0 +1,13 @@
+# ctf-standard: recommended default
+packages:
+  - git
+  - curl
+  - wget
+  - unzip
+  - build-essential
+  - python3
+  - python3-pip
+  - python3-venv
+  - net-tools
+  - nmap
+  - wireshark
