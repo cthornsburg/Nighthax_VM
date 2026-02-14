@@ -9,7 +9,7 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get install -y --no-install-recommends \
   git curl wget \
-  jq ripgrep tmux p7zip-full \
+  jq gron ripgrep tmux p7zip-full \
   python3 python3-venv pipx \
   build-essential \
   tcpdump tshark wireshark nmap \
