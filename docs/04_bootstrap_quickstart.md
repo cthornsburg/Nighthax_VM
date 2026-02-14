@@ -1,4 +1,4 @@
-# Bootstrap quickstart
+# Setup quickstart
 
 ## 1) Install your base VM
 - Create an Ubuntu-family VM (recommended: **Xubuntu 24.04 LTS**)
@@ -10,16 +10,21 @@ git clone https://github.com/cthornsburg/Nighthax_VM.git
 cd Nighthax_VM
 ```
 
-## 3) Run the bootstrap
+## 3) Run the setup script
 ```bash
-chmod +x bootstrap/bootstrap.sh
-./bootstrap/bootstrap.sh --profile ctf-standard
+chmod +x ./nighthax-setup.sh
+sudo ./nighthax-setup.sh
 ```
 
-Profiles:
+Profiles (optional):
 - `ctf-min` (small + fast)
-- `ctf-standard` (recommended)
+- `ctf-standard` (default)
 - `ctf-full` (heavier installs)
+
+Example:
+```bash
+sudo ./nighthax-setup.sh --profile ctf-full
+```
 
 ## 4) Import bookmarks
 See: `config/browser/bookmarks.html` and `config/browser/bookmarks.md`
