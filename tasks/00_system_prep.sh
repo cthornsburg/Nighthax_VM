@@ -7,7 +7,12 @@ apt-get update
 apt-get install -y --no-install-recommends \
   ca-certificates \
   sudo \
-  unzip
+  unzip \
+  software-properties-common
+
+# Enable Ubuntu "universe" repo (many CTF/DFIR packages live here)
+add-apt-repository -y universe
+apt-get update
 
 # Intentionally NOT installing openssh-server.
 # keep openssh-server during build (packer provisioning); remove in hardening.sh
