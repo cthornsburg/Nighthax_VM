@@ -9,8 +9,9 @@
 - Enable CPU virtualization in BIOS/UEFI (Intel VT-x / AMD-V)
 
 ## Downloads (standard)
-- **VirtualBox**
-- **VirtualBox Extension Pack** (needed for reliable USB 2/3 passthrough)
+- **VirtualBox (official):** https://www.virtualbox.org/wiki/Downloads
+- **VirtualBox Extension Pack (official):** https://www.virtualbox.org/wiki/Downloads  
+  (matches your VirtualBox version; needed for reliable USB 2/3 passthrough)
 
 ## Optional (already installed)
 - VMware Workstation is acceptable if it’s already on your computer. See: `docs/90_vmware_optional.md`

@@ -1,48 +1,42 @@
-# Verification Checklist (Build + Release)
+# Verification checklist (student build)
 
-Use this checklist after building the VM and before publishing an OVA link.
+Use this checklist after installing Xubuntu and running `nighthax-setup.sh`.
 
 ## 1) Boot + login
-- [ ] VM boots to XFCE desktop without errors
-- [ ] Login works with `nico` / `Nighthax`
-- [ ] Desktop shows a clear safety warning (or README) about default password + authorized use
+- [ ] VM boots to the desktop without errors
+- [ ] Student can log in with the account they created during install
 
-## 2) Security defaults
-- [ ] SSH server is not installed OR is disabled and not running
-  - Check: `systemctl is-enabled ssh` (should be `disabled` if installed)
-  - Check: `systemctl is-active ssh` (should be `inactive`)
-- [ ] No hard-coded secrets besides the intentionally documented default password
+## 2) Network + updates
+- [ ] Internet works in the VM (NAT is fine)
+- [ ] `sudo apt update` works without errors
 
 ## 3) Browser + bookmarks
 - [ ] Firefox opens
-- [ ] Bookmarks toolbar/folders are populated (Start Here, Network analysis, Forensics/IR, etc.)
-- [ ] Homepage points to the intended start page (if set)
+- [ ] Homepage points to https://nighthax.com
+- [ ] Bookmarks toolbar is visible
+- [ ] Bookmark folders are populated (NCL categories)
 
-## 4) Tool presence
+## 4) Tool presence (quick smoke tests)
 Run:
+- [ ] `nmap --version`
 - [ ] `wireshark --version`
-- [ ] `tcpdump --version`
 - [ ] `tshark --version`
-- [ ] `john --version`
-- [ ] `ssdeep -V` (or `ssdeep --version` depending on package)
-- [ ] `exiftool -ver`
-- [ ] `binwalk --version`
-- [ ] `foremost -V` (or run `foremost -h`)
-- [ ] `gdb --version` and confirm GEF loads in gdb
+- [ ] `tcpdump --version`
+- [ ] `jq --version`
+- [ ] `rg --version`
+- [ ] `sqlitebrowser --version` (or open DB Browser for SQLite from the menu)
+- [ ] `libreoffice --version`
 
-## 5) Wireshark capture policy
-- [ ] Capturing packets requires sudo (student is not in wireshark capture group)
+## 5) SSH stance (recommended default)
+- [ ] SSH server is disabled by default
+  - Check: `systemctl is-enabled ssh` → `disabled` (if installed)
+  - Check: `systemctl is-active ssh` → `inactive`
 
-## 6) Offline behavior (basic)
-- [ ] Core tools run without needing to download additional dependencies
-- [ ] Bookmarks and local docs are present even without internet
+## 6) Desktop reference files
+- [ ] Desktop contains:
+  - `NighHax_Tools_Installed.txt`
+  - `NighHax_Online_Tools_and_Bookmarks.txt`
 
-## 7) OVA export + integrity
-- [ ] Export OVA from VMware
-- [ ] Compute SHA256 and publish it alongside download link
-- [ ] Test import in VMware Workstation Player (fresh import)
-- [ ] (Optional) Test import in VirtualBox
-
-## 8) Versioning
-- [ ] Update README with the new OVA link + version
-- [ ] Note changes in release notes / changelog
+## 7) Common failure checks
+- [ ] Setup script can be re-run safely: `sudo bash ./nighthax-setup.sh`
+- [ ] If apt is locked, reboot and retry
