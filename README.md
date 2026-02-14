@@ -30,5 +30,9 @@ sudo bash ./nighthax-setup.sh
 
 Default profile is `ctf-standard`. (Advanced: `--profile ctf-min|ctf-full`.)
 
+## What’s included
+- Installed tools list (GUI + CLI): `docs/TOOLS_INSTALLED.md`
+- Online tools + bookmark folders: `docs/TOOLS_ONLINE_BOOKMARKS.md`
+
 ## Status
 In active development. Contributions welcome (see `CONTRIBUTING.md`).

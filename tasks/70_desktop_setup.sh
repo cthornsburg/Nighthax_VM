@@ -1,12 +1,37 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Desktop cosmetics + theme/wallpaper tweaks.
+# Desktop extras (student-facing shortcuts/docs).
 #
-# Deferred: Xubuntu defaults are acceptable and cosmetic changes have proven
-# unreliable across environments (monitor/workspace naming, snap/desktop quirks).
-#
-# This task is intentionally a no-op for now so we can re-enable later without
-# changing the setup runner.
+# We are deferring theme/wallpaper cosmetics for now, but we *do* place two
+# reference files on the Desktop so students can quickly see what's installed
+# and what online tools are bookmarked.
 
-echo "[nighthax] desktop_setup: cosmetics deferred (no-op)"
+PROFILE="${1:-ctf-standard}"
+TARGET_USER="${NIGHHAX_TARGET_USER:-${SUDO_USER:-nico}}"
+TARGET_HOME="$(getent passwd "$TARGET_USER" | cut -d: -f6 || true)"
+
+if [[ -z "$TARGET_HOME" || ! -d "$TARGET_HOME" ]]; then
+  echo "[nighthax] desktop_setup: could not resolve home for user: $TARGET_USER" >&2
+  exit 1
+fi
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+DESKTOP_DIR="${TARGET_HOME}/Desktop"
+install -d -m 0755 "$DESKTOP_DIR"
+
+# Copy the canonical docs onto the Desktop as .txt for easy access.
+# (If these files move in the repo, update here.)
+if [[ -f "${REPO_ROOT}/docs/TOOLS_INSTALLED.md" ]]; then
+  install -m 0644 "${REPO_ROOT}/docs/TOOLS_INSTALLED.md" "${DESKTOP_DIR}/NighHax_Tools_Installed.txt"
+fi
+
+if [[ -f "${REPO_ROOT}/docs/TOOLS_ONLINE_BOOKMARKS.md" ]]; then
+  install -m 0644 "${REPO_ROOT}/docs/TOOLS_ONLINE_BOOKMARKS.md" "${DESKTOP_DIR}/NighHax_Online_Tools_and_Bookmarks.txt"
+fi
+
+chown -R "${TARGET_USER}:${TARGET_USER}" "$DESKTOP_DIR"
+
+echo "[nighthax] desktop_setup: placed tool reference files on Desktop"
