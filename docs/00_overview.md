@@ -3,7 +3,8 @@
 This repo provides a **CTF VM setup kit** for NLC NighHax / cyber defense students.
 
 ## What this is
-- Guidance for creating a base Linux VM (Windows 11 host; VirtualBox or VMware)
+- Guidance for creating a base Linux VM on Windows 11 using **VirtualBox** (standard)
+- Optional guidance if you already use VMware Workstation (not the default)
 - A bootstrap workflow: `git clone` inside the VM → run scripts to install/prepare tools
 - Curated browser bookmarks + recommended extensions
 - Troubleshooting notes (including last-resort Windows 11 security setting changes)
@@ -14,7 +15,8 @@ This repo provides a **CTF VM setup kit** for NLC NighHax / cyber defense studen
 
 ## Supported baseline
 - Guest OS: Ubuntu 24.04 LTS family (recommended: **Xubuntu 24.04 LTS**)
-- Hypervisors: VirtualBox (primary docs) and VMware Workstation (supported)
+- Hypervisor (standard): **VirtualBox**
+- VMware Workstation: supported only as an *already-installed* alternative (see `docs/90_vmware_optional.md`)
 
 ## CTF writeups
 CTF writeups and broader program resources live here:

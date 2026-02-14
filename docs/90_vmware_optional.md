@@ -1,6 +1,9 @@
-# VMware Workstation setup (supported)
+# VMware Workstation (optional)
 
-VMware is fine if you already use it. The bootstrap scripts are hypervisor-agnostic.
+VirtualBox is the **standard** for this project (that’s what our screenshots/instructions assume).
+
+VMware Workstation is acceptable **only if it’s already installed** on your Windows host.
+The bootstrap scripts are hypervisor-agnostic.
 
 ## VM settings (baseline)
 - RAM: 4096 MB

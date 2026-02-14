@@ -8,10 +8,12 @@
 ## Required settings
 - Enable CPU virtualization in BIOS/UEFI (Intel VT-x / AMD-V)
 
-## Downloads
-Pick one hypervisor:
-- VirtualBox + Extension Pack (needed for reliable USB passthrough)
-- VMware Workstation (if already available)
+## Downloads (standard)
+- **VirtualBox**
+- **VirtualBox Extension Pack** (needed for reliable USB 2/3 passthrough)
+
+## Optional (already installed)
+- VMware Workstation is acceptable if it’s already on your computer. See: `docs/90_vmware_optional.md`
 
 ## Last-resort (performance / compatibility)
 If VMs are extremely slow or unstable, Windows 11 security virtualization may be forcing a compatibility mode.
