@@ -1,7 +1,7 @@
 # Setup quickstart
 
 ## 1) Install your base VM
-- Create an Ubuntu-family VM (recommended: **Xubuntu 24.04 LTS**)
+- Install Xubuntu (recommended: **Xubuntu 24.04 LTS**) using: `docs/03_xubuntu_install_step_by_step.md`
 - Update packages and reboot
 
 ## 2) Clone this repo inside the VM

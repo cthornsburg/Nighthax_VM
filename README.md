@@ -11,9 +11,10 @@ VMware Workstation is acceptable *only if already installed*; see `docs/90_vmwar
 2) Windows 11 prereqs: `docs/01_windows11_prereqs.md`
 3) VirtualBox setup: `docs/02_virtualbox_setup.md`
    - VMware optional (already installed): `docs/90_vmware_optional.md`
-4) Run setup: `docs/04_setup_quickstart.md`
-5) USB + clipboard: `docs/05_usb_clipboard_sharedfolders.md`
-6) Troubleshooting: `docs/06_troubleshooting_faq.md`
+4) Install Xubuntu: `docs/03_xubuntu_install_step_by_step.md`
+5) Run setup: `docs/04_setup_quickstart.md`
+6) USB + clipboard: `docs/05_usb_clipboard_sharedfolders.md`
+7) Troubleshooting: `docs/06_troubleshooting_faq.md`
 
 ## CTF writeups / broader student hub
 CTF writeups and broader program resources live in `nlc_cyber`:

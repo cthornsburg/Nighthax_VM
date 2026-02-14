@@ -4,6 +4,7 @@ This repo provides a **CTF VM setup kit** for NLC NighHax / cyber defense studen
 
 ## What this is
 - Guidance for creating a base Linux VM using **VirtualBox** (standard)
+  - Includes a step-by-step Xubuntu install walkthrough
   - Host OS can be **Windows 10/11**, **macOS**, or **Linux**
 - Optional guidance if you already use VMware Workstation (not the default)
 - A setup workflow: `git clone` inside the VM → run `nighthax-setup.sh`
