@@ -1,0 +1,15 @@
+# Local build artifacts / outputs
+output-ubuntu/
+packer_cache/
+*.box
+*.ova
+*.ovf
+*.vdi
+
+# Screenshots / debug captures
+build_screen*.png
+drafts_vmbuild_screen.png
+tmp_grub_*.png
+
+# macOS
+.DS_Store
