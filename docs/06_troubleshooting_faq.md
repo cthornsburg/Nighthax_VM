@@ -23,4 +23,4 @@ Document and revert if your organization requires these controls.
 - VMware: attach device via VMware removable devices menu
 
 ## apt is locked / dpkg interrupted
-- Wait for background updates to finish, or reboot and re-run the bootstrap
+- Wait for background updates to finish, or reboot and re-run the setup script

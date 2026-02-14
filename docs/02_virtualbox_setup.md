@@ -25,4 +25,4 @@ Install guest additions to enable:
 - shared clipboard
 - shared folders (optional)
 
-If guest additions are already working, do not fight it—move on to the bootstrap.
+If guest additions are already working, do not fight it—move on to the setup script.
