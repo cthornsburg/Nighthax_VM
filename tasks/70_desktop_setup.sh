@@ -22,6 +22,19 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 DESKTOP_DIR="${TARGET_HOME}/Desktop"
 install -d -m 0755 "$DESKTOP_DIR"
 
+# Login avatar (AccountsService) — reliable and low-risk cosmetic.
+AVATAR_SRC="${REPO_ROOT}/assets/branding/nico-icon.jpg"
+if [[ -f "$AVATAR_SRC" ]]; then
+  install -d /var/lib/AccountsService/icons
+  install -m 0644 "$AVATAR_SRC" "/var/lib/AccountsService/icons/${TARGET_USER}"
+
+  install -d /var/lib/AccountsService/users
+  cat >"/var/lib/AccountsService/users/${TARGET_USER}" <<EOF
+[User]
+Icon=/var/lib/AccountsService/icons/${TARGET_USER}
+EOF
+fi
+
 # Copy the canonical docs onto the Desktop as .txt for easy access.
 # (If these files move in the repo, update here.)
 if [[ -f "${REPO_ROOT}/docs/TOOLS_INSTALLED.md" ]]; then
