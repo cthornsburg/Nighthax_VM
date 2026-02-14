@@ -23,8 +23,10 @@ CTF writeups and broader program resources live in `nlc_cyber`:
 ```bash
 git clone https://github.com/cthornsburg/Nighthax_VM.git
 cd Nighthax_VM
-sudo ./nighthax-setup.sh
+sudo bash ./nighthax-setup.sh
 ```
+
+(If you prefer, you can also do `chmod +x ./nighthax-setup.sh` then run `sudo ./nighthax-setup.sh`.)
 
 Default profile is `ctf-standard`. (Advanced: `--profile ctf-min|ctf-full`.)
 

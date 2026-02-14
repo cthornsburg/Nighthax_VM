@@ -11,6 +11,12 @@ cd Nighthax_VM
 ```
 
 ## 3) Run the setup script
+Recommended (works even if the execute bit is missing):
+```bash
+sudo bash ./nighthax-setup.sh
+```
+
+Alternative:
 ```bash
 chmod +x ./nighthax-setup.sh
 sudo ./nighthax-setup.sh
@@ -23,7 +29,7 @@ Profiles (optional):
 
 Example:
 ```bash
-sudo ./nighthax-setup.sh --profile ctf-full
+sudo bash ./nighthax-setup.sh --profile ctf-full
 ```
 
 ## 4) Import bookmarks
