@@ -16,6 +16,7 @@ apt-get install -y --no-install-recommends \
   john \
   ssdeep \
   exiftool binwalk foremost bulk-extractor whois dnsutils \
+  sqlitebrowser \
   volatility3 \
   gdb \
   ca-certificates
