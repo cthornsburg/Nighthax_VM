@@ -90,6 +90,7 @@ POLICY_JSON=$(cat <<JSON
       {"Title":"Elastic Security Labs","URL":"https://www.elastic.co/security-labs","Folder":"NCL · Log Analysis","Placement":"toolbar"},
 
       {"Title":"Autopsy","URL":"https://www.autopsy.com/","Folder":"NCL · Forensics","Placement":"toolbar"},
+      {"Title":"FTK Imager (Windows)","URL":"https://www.exterro.com/digital-forensics-software/forensic-toolkit","Folder":"NCL · Forensics","Placement":"toolbar"},
       {"Title":"Volatility Foundation","URL":"https://www.volatilityfoundation.org/","Folder":"NCL · Forensics","Placement":"toolbar"},
       {"Title":"DFIR.training","URL":"https://dfir.training/","Folder":"NCL · Forensics","Placement":"toolbar"},
 
