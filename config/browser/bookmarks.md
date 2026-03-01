@@ -1,4 +1,4 @@
-# NighHax VM — Firefox Bookmarks (DRAFT)
+# NighHax VM — Firefox Bookmarks 
 
 Goal: give beginners a curated set of reliable references for CTF + network analysis.
 
