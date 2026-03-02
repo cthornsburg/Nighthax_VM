@@ -13,3 +13,15 @@ tmp_grub_*.png
 
 # macOS
 .DS_Store
+
+# OpenClaw private/runtime files (never publish)
+.openclaw/
+AGENTS.md
+SOUL.md
+USER.md
+TOOLS.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+memory/
+prompts/
