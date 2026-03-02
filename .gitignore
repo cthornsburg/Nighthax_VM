@@ -1,20 +1,4 @@
-# Local build artifacts / outputs
-output-ubuntu/
-packer_cache/
-*.box
-*.ova
-*.ovf
-*.vdi
-
-# Screenshots / debug captures
-build_screen*.png
-drafts_vmbuild_screen.png
-tmp_grub_*.png
-
-# macOS
-.DS_Store
-
-# OpenClaw private/runtime files (never publish)
+# Local/private workflow files (never publish)
 .openclaw/
 AGENTS.md
 SOUL.md
@@ -25,3 +9,8 @@ IDENTITY.md
 MEMORY.md
 memory/
 prompts/
+
+# Optional local-only config/secrets
+.env
+.env.*
+*.local
